@@ -15,9 +15,11 @@ const cookieOptions = {
   maxAge: 7 * 24 * 60 * 60 * 1000,
 };
 
+const SEVEN_DAYS_IN_SECONDS = 7 * 24 * 60 * 60;
+
 function issueToken(res: any, userId: string) {
   const token = jwt.sign({ userId }, process.env.JWT_SECRET as string, {
-    expiresIn: process.env.JWT_EXPIRES_IN || "7d",
+    expiresIn: Number(process.env.JWT_EXPIRES_IN) || SEVEN_DAYS_IN_SECONDS,
   });
   res.cookie("token", token, cookieOptions);
 }
