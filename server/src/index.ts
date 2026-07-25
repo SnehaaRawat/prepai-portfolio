@@ -27,11 +27,10 @@ app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
-connectDB()
-  .then(() => {
-    app.listen(PORT, () => console.log(`[server] PrepAI API running on port ${PORT}`));
-  })
-  .catch((err) => {
-    console.error("[server] failed to start:", err);
-    process.exit(1);
-  });
+app.listen(PORT, () => {
+  console.log(`[server] PrepAI API running on port ${PORT}`);
+});
+
+connectDB().catch((err) => {
+  console.error("[server] MongoDB connection failed:", err.message);
+});
