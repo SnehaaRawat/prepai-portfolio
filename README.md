@@ -8,11 +8,7 @@ PrepAI is a full-stack mock interview platform. Pick a role, answer AI-generated
 
 > First load may take ~30-60s if the backend has spun down from inactivity (Render free tier).
 
-
-
 ![PrepAI screenshot placeholder](docs/screenshot-interview.png)
-
-
 
 ## Why I built this
 
@@ -44,7 +40,7 @@ Most interview prep tools either give you a static question bank or generic tips
 
 ## Running Locally
 
-\```bash
+```bash
 # 1. Clone and install
 git clone <repo-url> && cd prepai
 cd server && npm install
@@ -57,7 +53,7 @@ cp server/.env.example server/.env
 # 3. Run both apps (in separate terminals)
 cd server && npm run dev   # http://localhost:5000
 cd client && npm run dev   # http://localhost:5173
-\```
+```
 
 ## Deploying & Troubleshooting
 
@@ -76,7 +72,7 @@ Deployed on Vercel (frontend) + Render (backend) + MongoDB Atlas + Groq (free ti
 
 ## Project Structure
 
-\```
+```
 prepai/
 ├── server/
 │   └── src/
@@ -91,7 +87,7 @@ prepai/
         ├── components/   # Shared UI (Nav, ScoreBadge)
         ├── store/        # Zustand auth store
         └── lib/          # API client
-\```
+```
 
 ## Elevator Pitch
 
