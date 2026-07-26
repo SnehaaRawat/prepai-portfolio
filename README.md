@@ -17,7 +17,7 @@ PrepAI is a full-stack mock interview platform. Pick a role, answer AI-generated
 <tr>
 <td><img src="docs/screenshot-interview.jpg" width="260"/><br/><sub>Interview flow</sub></td>
 <td><img src="docs/screenshot-summary.jpg" width="260"/><br/><sub>Session summary</sub></td>
-<td><img src="docs/screenshot-progress_.jpg" width="260"/><br/><sub>Progress dashboard</sub></td>
+<td><img src="docs/screenshot-progress.jpg" width="260"/><br/><sub>Progress dashboard</sub></td>
 </tr>
 </table>
 
