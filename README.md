@@ -46,7 +46,7 @@ cd ../client && npm install
 
 # 2. Configure environment
 cp server/.env.example server/.env
-# Add your MongoDB URI and Anthropic API key to server/.env
+# Add your MongoDB URI and Groq API key to server/.env
 
 # 3. Run both apps (in separate terminals)
 cd server && npm run dev   # http://localhost:5000
@@ -62,7 +62,7 @@ prepai/
 │       ├── config/       # DB connection
 │       ├── models/       # Mongoose schemas
 │       ├── routes/       # Auth + interview endpoints
-│       ├── services/     # Claude API integration
+│       ├── services/     # Groq API integration
 │       └── middleware/   # Auth guard, error handling
 └── client/
     └── src/
